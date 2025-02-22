@@ -8,7 +8,7 @@ export const DownloadPicture = ({ onClose }) => {
   const sheetRef = useRef(null);
 
   // variables
-   const snapPoints = useMemo(() => ["25%", "60%", "90%"], []);
+  const snapPoints = useMemo(() => ["25%", "60%", "100%"], []);
 
   // callbacks
   const handleSheetChange = useCallback((index) => {
@@ -24,9 +24,11 @@ export const DownloadPicture = ({ onClose }) => {
       <BottomSheet
         ref={sheetRef}
         index={1}
+        onClose={onClose}
         snapPoints={snapPoints}
         // enableDynamicSizing={false}
         onChange={handleSheetChange}
+        enablePanDownToClose={true}
       >
         <BottomSheetView style={styles.contentContainer}>
           <Text>Awesome 🔥</Text>
@@ -50,6 +52,5 @@ const styles = StyleSheet.create({
     backgroundColor: "white",
   },
 });
-
 
 // export default DownloadPicture;
