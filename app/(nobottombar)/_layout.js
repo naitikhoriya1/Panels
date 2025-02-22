@@ -5,9 +5,6 @@ import { Slot } from "expo-router";
 const _layout = () => {
   return (
     <View>
-      <View style={{ backgroundColor: "black" }}>
-        <Text style={{ color: "white" }}>Go Back</Text>
-      </View>
       <Slot />
     </View>
   );

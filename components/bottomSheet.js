@@ -29,6 +29,7 @@ export const DownloadPicture = ({ onClose }) => {
         // enableDynamicSizing={false}
         onChange={handleSheetChange}
         enablePanDownToClose={true}
+        handleIndicatorStyle={{ display: "none" }}
       >
         <BottomSheetView style={styles.contentContainer}>
           <Text>Awesome 🔥</Text>

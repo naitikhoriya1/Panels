@@ -4,9 +4,9 @@ import { SafeAreaView } from "react-native-safe-area-context";
 
 const accountInfo = () => {
   return (
-    <SafeAreaView>
+    <View>
       <Text>accountInfo</Text>
-    </SafeAreaView>
+    </View>
   );
 };
 
